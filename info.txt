@@ -1,0 +1,21 @@
+padel-marketplace/
+├── app/Http/Controllers/Api/     # 8 controllere REST
+│   ├── AuthController.php        # Login, Register, Logout
+│   ├── ProductController.php     # CRUD produse + upload imagini
+│   ├── BuybackController.php     # Calcul pret + cereri
+│   └── RacketAdvisorController.php # Algoritm recomandare
+├── app/Models/                   # 8 modele Eloquent
+├── database/
+│   ├── migrations/               # 13 migratii
+│   └── seeders/DatabaseSeeder.php # 30 rachete reale
+├── resources/js/
+│   ├── app.jsx                   # Entry point + routing
+│   ├── api.js                    # Axios cu interceptors
+│   ├── context/AuthContext.jsx   # Auth state management
+│   ├── components/               # Navbar, Footer, Layout
+│   └── pages/                    # 13 pagini + 7 admin
+├── routes/
+│   ├── api.php                   # ~40 rute API (public/auth/admin)
+│   └── web.php                   # Catch-all → React SPA
+├── Dockerfile                    # Deploy production
+└── nixpacks.toml                 # Railway deploy config
